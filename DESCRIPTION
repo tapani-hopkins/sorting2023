@@ -1,0 +1,21 @@
+Package: sorting2023
+Title: Upload sorted Ugandan wasp jars and pinned wasps to Kotka
+Version: 0.0.0.9000
+Authors@R: 
+    person("Tapani", "Hopkins", , "tapani-hopkins@users.noreply.github.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2256-0098"))
+Description: Functions for use when sorting Ugandan wasps. 
+    Especially for the sorting of Pimplinae, Microgastrinae etc in 2023. 
+    Create a Kotka upload for the pinned wasps. Update wasp jar data in Kotka, 
+    to tell what subfamilies have been removed. Store a list of all sorted wasp jars.
+License: CC0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    wasps2kotka (>= 0.1.0.9100)
+Remotes: 
+    tapani-hopkins/wasps2kotka
+Depends: 
+    R (>= 2.10)
+LazyData: true
