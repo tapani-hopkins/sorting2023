@@ -20,7 +20,7 @@ add_equivalents = function(x){
 	# get microgastrinae IDs for those jars that contained microgastrinae
 	# (empty if no microgastrinae = no tube going to Canada)
 	x$microgastrinae = ""
-	i = is.na(x$no_microgastrinae)
+	i = is.na(x$no_microgastrinae) | x$no_microgastrinae == ""
 	x$microgastrinae[i] = x$microgastrinae_tube[i]
 	
 	# return
