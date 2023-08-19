@@ -24,13 +24,10 @@ upload_wasps = function(x, f="uploads/kotka_upload_wasps.csv"){
 	# add data on Malaise sample and microgastrinae ID
 	x = add_equivalents(x)
 	
-	# repeat each row "nwasps" times
-	wasps = x[rep(1:nrow(x), x$nwasps), ]
-	
 	# get path where to save problems file
 	f2 = paste0(dirname(f), "/kotka_upload_problems.csv")
 	
 	# upload wasps
-	wasps2kotka::make_upload(wasps, upload_file=f, problems_file=f2)
+	wasps2kotka::make_upload(x, nwasps=x$nwasps, upload_file=f, problems_file=f2)
 	
 }
